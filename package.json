@@ -1,0 +1,13 @@
+{
+  "id": "mijnkantoor",
+  "name": "Mijnkantoor",
+  "version": "0.0.1",
+  "description": "MijnKantoor",
+  "main": "index.js",
+  "author": "Peter Mein <peter@infratron.io>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://web.mijnkantoorapp.nl",
+    "hasNotificationSound": true
+  }
+}
