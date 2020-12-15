@@ -31,12 +31,12 @@ window.addEventListener('beforeunload', async () => {
 
 module.exports = (Franz) => {
   const getMessages = function getMessages() {
-    const elements = document.querySelectorAll('.app ul.menu > li');
+    const elements = document.querySelectorAll('div.navBarMenu > a.navBarLink');
     let count = 0;
 
     for (let i = 0; i < elements.length; i += 1) {
-      if (elements[i].querySelectorAll('a span.count').length === 1) {
-        count += parseInt(elements[i].querySelectorAll('a span.count')[0].innerHTML);
+      if (elements[i].querySelectorAll('div.badge').length === 1) {
+        count += parseInt(elements[i].querySelectorAll('div.badge')[0].innerHTML);
       }
     }
 
